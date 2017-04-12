@@ -1,0 +1,7 @@
+Wunderman\EpreventionBundle\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: titre
+    properties:
+        titre:
+            - NotBlank: ~
+            - Type: string

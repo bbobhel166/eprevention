@@ -1,0 +1,14 @@
+parameters:
+    wunderman_eprevention.load.ezdatas.class: Wunderman\EpreventionBundle\Service\LoadEzDatas
+services:
+    pagination_factory:
+        class: Wunderman\EpreventionBundle\Pagination\PaginationFactory
+        arguments: ['@router']
+    wunderman_eprevention.load.ezdatas:
+        class: Wunderman\EpreventionBundle\Service\LoadEzDatas
+        arguments: [ '@doctrine.orm.entity_manager', '@service_container' ]
+
+
+
+
+
